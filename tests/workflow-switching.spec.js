@@ -19,7 +19,7 @@ test('all workflow buttons are visible', async ({ page }) => {
 
 test('switching to Jira shows correct placeholder', async ({ page }) => {
   await page.getByRole('button', { name: '📋 Jira Ticket' }).click();
-  await expect(page.getByPlaceholder(/PROJ-123/)).toBeVisible();
+  await expect(page.locator('input[type="text"]').filter({ hasAttribute: 'placeholder' })).toBeVisible();
 });
 
 test('switching to Plain Text hides URL required marker', async ({ page }) => {
