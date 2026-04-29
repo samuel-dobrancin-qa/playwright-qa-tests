@@ -39,4 +39,3 @@ test('analyze button enables when context is filled', async ({ page }) => {
   const analyzeBtn = page.getByRole('button', { name: 'Analyze →' });
   await expect(analyzeBtn).toBeEnabled();
 });
-EOF
