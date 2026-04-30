@@ -1,6 +1,6 @@
 # 🎭 Playwright QA Test Suite
 
-![Playwright Tests](https://github.com/samuel-dobrancin-qa/playwright-qa-tests/actions/workflows/playwright.yml/badge.svg)
+[![Playwright Tests](https://github.com/samuel-dobrancin-qa/playwright-qa-tests/actions/workflows/playwright.yml/badge.svg)](https://github.com/samuel-dobrancin-qa/playwright-qa-tests/actions/workflows/playwright.yml) 
 
 Automated end-to-end test suite for [QA Risk Analyzer](https://qa-risk-analyzer.vercel.app/) — an AI-powered tool that generates risk assessments, test cases, and regression checklists from GitHub, GitLab, Jira, Azure DevOps, and Bitbucket changes.
 
