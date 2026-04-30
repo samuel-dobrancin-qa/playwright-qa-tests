@@ -18,7 +18,7 @@ test('demo analysis runs end to end', async ({ page }) => {
   await page.getByRole('button', { name: 'Looks good — Run Analysis →' }).click();
 
   // Wait for AI to finish — look for risk score to appear
-  await expect(page.locator('span').filter({ hasText: /^\d+$/ })).toBeVisible({ timeout: 90000 });
+  await expect(page.locator('span', { hasText: 'RISK' })).toBeVisible({ timeout: 90000 });
 
   // Now navigate tabs and verify content exists
   await page.getByRole('button', { name: '🧪 Test Cases' }).click();
